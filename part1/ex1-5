@@ -1,0 +1,18 @@
+Getting the alpine version of simple-web-service:
+docker pull devopsdockeruh/simple-web-service:alpine
+docker image ls
+
+Output:
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   13 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   13 months ago   15.7MB
+
+As we can see, the alpine version is considerably smaller.
+
+Checking secret message:
+docker container run --name cont devopsdockeruh/simple-web-service:alpine
+docker container exec cont tail -f ./text.log
+
+Secret message:
+'You can find the source code here: https://github.com/docker-hy'
+
+The message is the same.

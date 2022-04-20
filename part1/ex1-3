@@ -1,0 +1,6 @@
+Commands given:
+docker container run --name cont devopsdockeruh/simple-web-service:ubuntu
+docker container exec cont tail -f ./text.log
+
+Secret message:
+'You can find the source code here: https://github.com/docker-hy'
